@@ -1,0 +1,59 @@
+<html>
+    <head>
+
+    </head>
+    <body onload="table()">
+        <table border="30px">
+            <thead>
+                <th>id</th>
+                <th>first name</th>
+                <th>email</th>
+                <th>gender</th>
+                <tbody id ="pathi"></tbody>
+
+             </thead>
+       </table>
+    </body>
+    <script>
+        let employee=[{"id":1,"first_name":"Rene","email":"rgouinlock0@cargocollective.com","gender":"Male"},
+{"id":2,"first_name":"Field","email":"fgiabucci1@mac.com","gender":"Female"},
+{"id":3,"first_name":"Gus","email":"gelderbrant2@gnu.org","gender":"Male"},
+{"id":4,"first_name":"Phyllida","email":"pboater3@123-reg.co.uk","gender":"Female"},
+{"id":5,"first_name":"Linet","email":"lklimkiewich4@nydailynews.com","gender":"Female"},
+{"id":6,"first_name":"Dannie","email":"dshelley5@wikimedia.org","gender":"Female"},
+{"id":7,"first_name":"Ilsa","email":"imariyushkin6@imgur.com","gender":"Female"},
+{"id":8,"first_name":"Grazia","email":"gcaird7@jiathis.com","gender":"Female"},
+{"id":9,"first_name":"Artie","email":"afreschi8@sciencedaily.com","gender":"Female"},
+{"id":10,"first_name":"Annmaria","email":"aocooney9@last.fm","gender":"Female"},
+{"id":11,"first_name":"Mirilla","email":"mchampleya@telegraph.co.uk","gender":"Female"},
+{"id":12,"first_name":"Elyssa","email":"equarrellb@etsy.com","gender":"Female"},
+{"id":13,"first_name":"Ewart","email":"ebenerc@state.gov","gender":"Male"},
+{"id":14,"first_name":"Rufus","email":"rwincomd@creativecommons.org","gender":"Female"},
+{"id":15,"first_name":"Pedro","email":"phorburghe@1688.com","gender":"Female"},
+{"id":16,"first_name":"Audrey","email":"agerrillf@redcross.org","gender":"Female"},
+{"id":17,"first_name":"Riley","email":"rlidgettg@yolasite.com","gender":"Female"},
+{"id":18,"first_name":"Dolph","email":"dscanlanh@harvard.edu","gender":"Male"},
+{"id":19,"first_name":"Caprice","email":"cpittawayi@163.com","gender":"Female"},
+{"id":20,"first_name":"Karel","email":"kjumpj@uiuc.edu","gender":"Agender"},
+{"id":21,"first_name":"Elisha","email":"elowreyk@ask.com","gender":"Female"},
+{"id":22,"first_name":"Odette","email":"ojearyl@slashdot.org","gender":"Male"},
+{"id":23,"first_name":"Kellen","email":"kgreenhousem@mediafire.com","gender":"Female"},
+{"id":24,"first_name":"Anette","email":"aruoffn@furl.net","gender":"Genderfluid"}];
+
+function table(){
+    let rows=""
+    for(let i=0;i<=employee.length-1; i++){
+        rows=
+        rows+
+        `<tr>
+        <td>${employee[i].id}</td>
+        <td>${employee[i].first_name}</td>
+        <td>${employee[i].email}</td>
+        <td>${employee[i].gender}</td>
+     </tr>`
+    }
+
+document.getElementById("pathi").innerHTML=rows;
+}
+    </script>
+</html>
