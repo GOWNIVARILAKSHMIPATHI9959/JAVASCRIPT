@@ -40,20 +40,17 @@
 {"id":23,"first_name":"Kellen","email":"kgreenhousem@mediafire.com","gender":"Female"},
 {"id":24,"first_name":"Anette","email":"aruoffn@furl.net","gender":"Genderfluid"}];
 
-function table(){
-    let rows=""
-    for(let i=0;i<=employee.length-1; i++){
-        rows=
+<script/>
+let rows=""
+employee.map((emp)=>{
+    // console.log(employee);
+    rows=
         rows+
         `<tr>
-        <td>${employee[i].id}</td>
-        <td>${employee[i].first_name}</td>
-        <td>${employee[i].email}</td>
-        <td>${employee[i].gender}</td>
+        <td>${emp.id}</td>
+        <td>${emp.first_name}</td>
+        <td>${emp.email}</td>
+        <td>${emp.gender}</td>
      </tr>`
-    }
-
-document.getElementById("pathi").innerHTML=rows;
-}
-    </script>
-</html>
+    })
+     document.getElementById("pathi").innerHTML=rows;
