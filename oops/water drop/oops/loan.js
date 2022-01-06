@@ -9,9 +9,6 @@ class loan{
 
     }
 }
-
-
-
 class personalloan extends loan{
     constructor(name,age,city){
         super(name,age,city);
