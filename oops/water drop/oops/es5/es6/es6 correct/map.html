@@ -1,0 +1,42 @@
+<html>
+    <head>
+
+    </head>
+    <body onload="table()">
+        <table border="2">
+            <thead>
+                <th>id</th>
+                <th>name</th>
+                <th>email</th>
+                <th>gender</th>
+            </thead>
+            <tbody id="tb1"></tbody>
+        </table>
+    </body>
+    <script>
+        let emp=[{"id":1,"first_name":"Jasmina","email":"jtetla0@joomla.org","gender":"Polygender"},
+{"id":2,"first_name":"Benyamin","email":"bboolsen1@elpais.com","gender":"Female"},
+{"id":3,"first_name":"Ermengarde","email":"emarcinkowski2@plala.or.jp","gender":"Female"},
+{"id":4,"first_name":"Rurik","email":"rstquintin3@smh.com.au","gender":"Female"},
+{"id":5,"first_name":"Stacey","email":"shover4@patch.com","gender":"Female"},
+{"id":6,"first_name":"Theodor","email":"tnesey5@mashable.com","gender":"Female"},
+{"id":7,"first_name":"Dante","email":"dkabisch6@comsenz.com","gender":"Male"},
+{"id":8,"first_name":"Dorthy","email":"dbeckwith7@chron.com","gender":"Male"},
+{"id":9,"first_name":"Kory","email":"kpeppin8@liveinternet.ru","gender":"Female"},
+{"id":10,"first_name":"Tabor","email":"tkupis9@intel.com","gender":"Male"}]
+function table(){
+    rows="";
+    emp.map((laxman)=>{
+        rows=
+        rows+
+        `<tr>
+        <td>${laxman.id}</td>
+        <td>${laxman.first_name}</td>
+        <td>${laxman.email}</td>
+        <td>${laxman.gender}</td>
+        <tr/>`
+    });
+    document.getElementById("tb1").innerHTML=rows;
+}
+    </script>
+</html>
